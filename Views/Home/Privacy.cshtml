@@ -1,0 +1,93 @@
+﻿@{
+    ViewData["Title"] = "Our Doctors";
+}
+<h1>@ViewData["Title"]</h1>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Doctor Name</th>
+            <th>Specialty</th>
+            <th>Hospital</th>
+            <th>Contact Number</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Dr. John Smith</td>
+            <td>Cardiologist</td>
+            <td>Green Valley Hospital</td>
+            <td>+1 234 567 890</td>
+            <td>
+                <button class="btn btn-primary" onclick="bookAppointment('Dr. John Smith')">Book Appointment</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Dr. Emily Williams</td>
+            <td>Dermatologist</td>
+            <td>Blue Hills Medical Center</td>
+            <td>+1 345 678 901</td>
+            <td>
+                <button class="btn btn-primary" onclick="bookAppointment('Dr. Emily Williams')">Book Appointment</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Dr. Michael Brown</td>
+            <td>Neurologist</td>
+            <td>Sunrise Health Clinic</td>
+            <td>+1 456 789 012</td>
+            <td>
+                <button class="btn btn-primary" onclick="bookAppointment('Dr. Michael Brown')">Book Appointment</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Dr. Sarah Johnson</td>
+            <td>Pediatrician</td>
+            <td>City Central Hospital</td>
+            <td>+1 567 890 123</td>
+            <td>
+                <button class="btn btn-primary" onclick="bookAppointment('Dr. Sarah Johnson')">Book Appointment</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Dr. Robert Davis</td>
+            <td>Orthopedic Surgeon</td>
+            <td>Northside Hospital</td>
+            <td>+1 678 901 234</td>
+            <td>
+                <button class="btn btn-primary" onclick="bookAppointment('Dr. Robert Davis')">Book Appointment</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+    function bookAppointment(doctorName) {
+        alert("Booking an appointment with " + doctorName);
+       
+    }
+</script>
+<div class="container my-5">
+    <h2 class="text-center">The Importance of Regular Healthcare Check-Ups</h2>
+    <p class="lead text-justify">
+        Healthcare is not just about treating illnesses; it's about maintaining overall well-being and preventing potential health issues before they become serious. Regular check-ups allow doctors to assess your current health status and catch problems early on, often before symptoms even appear. Early detection is key in successfully managing or treating conditions like hypertension, diabetes, heart disease, and more.
+    </p>
+
+    <h3>Why You Should Schedule Regular Check-Ups:</h3>
+    <ul class="list-group list-group-flush mb-3">
+        <li class="list-group-item">**Preventive Care**: Regular visits to your healthcare provider can help in detecting diseases early when they are most treatable.</li>
+        <li class="list-group-item">**Monitor Your Health**: Even if you feel healthy, regular check-ups can help track your health over time, ensuring that everything is functioning as it should.</li>
+        <li class="list-group-item">**Build a Strong Doctor-Patient Relationship**: Having regular check-ups allows you to establish a relationship with your doctor, making it easier to discuss health concerns in the future.</li>
+        <li class="list-group-item">**Update Vaccinations**: Regular check-ups ensure that you are up-to-date with important vaccinations and screenings for a variety of health conditions.</li>
+        <li class="list-group-item">**Lifestyle Advice**: Doctors provide valuable advice on diet, exercise, and other lifestyle choices that can help you stay healthy in the long term.</li>
+    </ul>
+
+    <p class="lead">
+        Remember, your health is your greatest asset. By booking regular check-ups, you are taking proactive steps to ensure that you stay healthy and prevent future complications. Our dedicated team of specialists is here to provide comprehensive care and advice tailored to your unique needs. Don't wait—book your next check-up today!
+    </p>
+
+    <div class="text-center">
+        <a href="#doctor-table" class="btn btn-success btn-lg">Find a Doctor & Book an Appointment</a>
+    </div>
+</div>
